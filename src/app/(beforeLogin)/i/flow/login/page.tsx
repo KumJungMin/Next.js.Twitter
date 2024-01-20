@@ -1,6 +1,8 @@
-import { redirect } from 'next/navigation';
+import LoginModal from "@/app/(beforeLogin)/_component/LoginModal";
 
-// redirect가 있으므로, /login 으로 이동시, 강제로 /i/flow/login 으로 이동시킴
-export default function Login() {
-  redirect('/i/flow/login');
+export default function Page() {
+  // 이 주소로 접근시 모달을 띄운다.
+  return (
+    <LoginModal />
+  );
 }
